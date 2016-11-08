@@ -491,7 +491,6 @@ class SqlAlchemySessionInterface(SessionInterface):
             def __repr__(self):
                 return '<Session data %s>' % self.data
 
-        self.db.create_all()
         self.sql_session_model = Session
 
     def open_session(self, app, request):
